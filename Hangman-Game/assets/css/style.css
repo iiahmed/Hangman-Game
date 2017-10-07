@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+}
+
+.flex {
+	display: grid; 
+	min-height: 100%;
+	grid-template-rows: 1fr auto;
+	}
+
+body {
+	background-image: url("../images/cactus.jpeg");
+	background-size: cover;
+	background-size: 100%;
+	background-image: padding: 100px;
+}
+
+
+#title {
+	font-family: 'Architects Daughter', cursive;
+	float: left;
+	padding-top: 75px;
+	padding-left: 200px;
+	animation: blinker 1s linear infinite;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Architects Daughter', cursive;
+}
+
+#game-intro {
+	font-weight: bold;
+	font-size: 40px;
+	font-family: 'Architects Daughter', cursive;
+	margin-left: 200px;
+	margin-bottom: 50px;
+}
+
+
+.resize {
+	max-width:500px;
+ 	max-height:500px;
+ 	display: block;
+ 	margin: 0 auto;
+ 	margin-bottom: 30px;
+ 	margin-right: 800px;
+}
+
+.footerTwo {
+	font-weight: bold;
+	font-size: 17px;
+	font-family: 'Architects Daughter', cursive;
+	background-color: grey;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	text-align: center;
+}
+
+
