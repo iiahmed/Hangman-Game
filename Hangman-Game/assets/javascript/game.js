@@ -1,14 +1,24 @@
+document.onkeyup = function(event) {
+	document.getElementById("welcome").setAttribute("style","display:none")
+}
 
 
-keyListener = new Object();
-keyListener.onKeyDown = function() {
-  x = Key.getAscii();
-//type what u want to do here
-};
-Key.addListener(keyListener);
+var wins; 
+var hangmanWord = selectedWord();
+var wordOptions = ["ErfMoney", "CodefoLyfe", "GetMethodsDieTrying"];
+var gameDiv = document.getElementById("game");
+var remainingChances = 15;
 
-document.addEventListener("keypress", function(event) {
-    if (event.keyCode == 13) {
-        alert('hi.');
-    }
-})
+	var selectedWord = function () {
+			return options [Math.random() * wordOptions.length + 1];
+		}
+
+		var updateWordOnHTML = function () {
+			var html = "wins:" + wins + "<br>";
+			var UnderScores = "";
+			for(var i = 0, i < selectedWord.length; i++){
+				underScores += "_";
+			}
+			html = html + UnderScores;
+			gameDiv.innerHTML = html; 
+		}
